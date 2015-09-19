@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 	addresses = addresses.substring( 0, addresses.length - 2 );
   res.send('<html> \
     <head> \
-        <title>Container Info</title> \
+        <title>Container Infoo</title> \
         <link rel="stylesheet" type="text/css" href="style/info.css"> \
     </head> \
     <body> \
