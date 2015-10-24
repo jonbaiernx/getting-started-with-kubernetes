@@ -6,4 +6,7 @@ metadata:
 spec:
   containers:
   - image: debian:latest
+    command:
+      - sleep
+      - "3600"
     name: utility
