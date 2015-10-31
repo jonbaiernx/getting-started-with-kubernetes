@@ -6,5 +6,6 @@ subsets:
 - addresses:
   - IP: <ENTER IP TO POINT SERVICE TO>
   ports:
-    - port: 80
+    - name: http
+      port: 80
       protocol: TCP

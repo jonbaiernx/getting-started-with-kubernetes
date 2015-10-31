@@ -31,3 +31,10 @@ spec:
             port: 80
           initialDelaySeconds: 30
           timeoutSeconds: 5
+        readinessProbe:
+          # An HTTP health check 
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 30
+          timeoutSeconds: 1
