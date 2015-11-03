@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: node-js-multi
-        image: jonbaier/node-express-multi:0.1
+        image: jonbaier/node-express-multi:latest
         ports:
         - containerPort: 80
-        - containerPort: 443
+        - containerPort: 8888

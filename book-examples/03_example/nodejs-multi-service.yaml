@@ -10,8 +10,8 @@ spec:
   - name: http
     protocol: TCP
     port: 80
-  - name: fake-https
+  - name: fake-admin-http
     protocol: TCP
-    port: 443    
+    port: 8888    
   selector:
     name: node-js-multi

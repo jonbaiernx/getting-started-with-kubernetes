@@ -47,7 +47,7 @@ var server = app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening at http://%s:%s', host, port);
 });
 
-var serverFS = app.listen(process.env.FAKE_SSL_PORT || 3000, function () {
+var serverFS = app.listen(process.env.FAKE_ADMIN_PORT || 3000, function () {
   var host = serverFS.address().address;
   var port = serverFS.address().port;
 

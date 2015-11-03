@@ -18,18 +18,18 @@ gulp.task('pull', function(){
 
 //Build Docker Image
 gulp.task('docker-build', shell.task([
-  'docker build -t jonbaier/node-gulp:latest ./getting-started-with-kubernetes/container-info/',
-  'docker push jonbaier/node-gulp:latest'
+  'docker build -t <your username>/node-gulp:latest ./getting-started-with-kubernetes/docker-image-source/container-info/',
+  'docker push <your username>/node-gulp:latest'
 ]));
 
 //Run New Pod
 gulp.task('create-kube-pod', shell.task([
-  'kubectl.sh create -f node-gulp-controller.yaml',
-  'kubectl.sh create -f node-gulp-service.yaml'
+  'kubectl create -f node-gulp-controller.yaml',
+  'kubectl create -f node-gulp-service.yaml'
 ]));
 
 //Update Pod
 gulp.task('update-kube-pod', shell.task([
-  'kubectl.sh delete -f node-gulp-controller.yaml',
-  'kubectl.sh create -f node-gulp-controller.yaml'
+  'kubectl delete -f node-gulp-controller.yaml',
+  'kubectl create -f node-gulp-controller.yaml'
 ]));

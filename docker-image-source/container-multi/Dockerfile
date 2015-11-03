@@ -6,6 +6,6 @@ WORKDIR /src
 RUN npm install
 
 ENV PORT=80
-ENV FAKE_SSL_PORT=443
+ENV FAKE_ADMIN_PORT=8888
 
 CMD ["node", "index.js"]
