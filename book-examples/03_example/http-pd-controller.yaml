@@ -11,6 +11,8 @@ spec:
   template:
     metadata:
       name: http-pd
+      labels:
+        name: http-pd
     spec:
       containers:
       - image: nginx:latest
@@ -25,4 +27,4 @@ spec:
         gcePersistentDisk:
           pdName: mysite-volume-1
           fsType: ext4
-		  readOnly: true
+          readOnly: true

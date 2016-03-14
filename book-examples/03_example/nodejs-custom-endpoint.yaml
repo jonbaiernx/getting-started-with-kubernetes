@@ -4,7 +4,7 @@ metadata:
   name: custom-service
 subsets:
 - addresses:
-  - IP: <ENTER IP TO POINT SERVICE TO>
+  - ip: <ENTER IP TO POINT SERVICE TO>
   ports:
     - name: http
       port: 80

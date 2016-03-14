@@ -13,5 +13,5 @@ spec:
       name: memory-volume
   volumes:
   - name: memory-volume
-    emptydir:
+    emptyDir:
       medium: Memory
