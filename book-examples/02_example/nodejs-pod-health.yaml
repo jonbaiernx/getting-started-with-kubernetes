@@ -15,7 +15,7 @@ spec:
         port: 80
       initialDelaySeconds: 30
       timeoutSeconds: 1
-	readinessProbe:
+    readinessProbe:
       # An HTTP health check 
       httpGet:
         path: /status/
